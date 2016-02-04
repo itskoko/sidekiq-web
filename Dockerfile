@@ -3,7 +3,7 @@
 #
 
 # Pull base image.
-FROM danielfarrell/ruby
+FROM ruby:2.1
 MAINTAINER Daniel Farrell <daniel.farrell@jobaio.com>
 
 # Add Application
