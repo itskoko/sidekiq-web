@@ -1,5 +1,7 @@
 require 'sidekiq'
 
+Encoding.default_external = Encoding::UTF_8
+
 Sidekiq.configure_client do |config|
   config.redis = {  url: ENV['REDIS_URL'], namespace: ENV['REDIS_NAMESPACE'], size: (ENV['REDIS_SIZE'] || 1) }
 end
